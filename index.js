@@ -62,7 +62,7 @@ function removeTodo(toDo, i) {
 
 // status
 
-function status(todo, toDo) {
+function Status(todo, toDo) {
     if (todo.completed === false) {
         todo.completed = true;
     } else {
@@ -143,7 +143,7 @@ class ToDo {
 
             checkBox.addEventListener('change', () => {
                 label.classList.toggle('checked');
-                status(todo, this.toDo);
+                Status(todo, this.toDo);
             });
         }
     }
